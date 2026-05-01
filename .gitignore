@@ -1,7 +1,8 @@
-# Helper scripts (local development only)
+# Helper scripts (local development only) - except update script
 *.py
-*.ps1
 *.sh
+# Note: actualizar-extension.ps1 is allowed (it's the update script)
+!actualizar-extension.ps1
 
 # System files
 .DS_Store
