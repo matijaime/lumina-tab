@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Lumina Tab",
+  "version": "1.0.0",
+  "description": "A beautiful, macOS-inspired new tab experience for Chrome.",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "topSites", "identity"],
+  "host_permissions": [
+    "https://wttr.in/*",
+    "https://www.google.com/*",
+    "https://www.googleapis.com/*"
+  ],
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  }
+}

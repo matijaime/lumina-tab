@@ -1,0 +1,152 @@
+/* ============================================
+   LOCAL GOOGLE FONTS (WOFF2)
+   ============================================ */
+
+/*
+   Fuentes cargadas localmente desde archivos WOFF2
+   No requiere descargas externas
+*/
+
+/* Clock Fonts */
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('./fonts/oswald.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./fonts/bebas-neue.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('./fonts/playfair-display.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('./fonts/dm-serif-display.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('./fonts/cormorant-garamond.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Righteous';
+  src: url('./fonts/righteous.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Abril Fatface';
+  src: url('./fonts/abril-fatface.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('./fonts/josefin-sans.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('./fonts/cinzel.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Major Mono Display';
+  src: url('./fonts/major-mono-display.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+/* Greeting/Date Fonts */
+
+@font-face {
+  font-family: 'Lora';
+  src: url('./fonts/lora.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./fonts/raleway.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('./fonts/nunito.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./fonts/quicksand.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('./fonts/jost.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./fonts/outfit.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./fonts/dm-sans.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Syne';
+  src: url('./fonts/syne.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('./fonts/figtree.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('./fonts/plus-jakarta-sans.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+}

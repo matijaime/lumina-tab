@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="newtab.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+  <!-- Google-style top bar -->
+  <div class="top-bar">
+    <div class="top-bar-left"></div>
+    <div class="top-bar-right">
+      <a href="#" class="top-bar-link" id="gmailLink">Gmail</a>
+      <a href="#" class="top-bar-link" id="imagesLink">Images</a>
+
+      <!-- Google Apps Grid -->
+      <button class="top-bar-icon-btn" id="appsBtn" title="Google Apps">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M6 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2C4.9 10 4 10.9 4 12s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6-8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6-8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+        </svg>
+      </button>
+
+      <!-- Apps Dropdown -->
+      <div class="dropdown" id="appsDropdown">
+        <div class="apps-grid">
+          <a href="#" class="app-item" data-app="drive" title="Google Drive">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8.5 3h7L21 10v9.5c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zm0 2v2h7V5h-7z"/></svg>
+            <span>Drive</span>
+          </a>
+          <a href="#" class="app-item" data-app="maps" title="Google Maps">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8m3.5-9c0 1.9-1.6 3.5-3.5 3.5S8.5 12.9 8.5 11 10.1 7.5 12 7.5s3.5 1.6 3.5 3.5z"/></svg>
+            <span>Maps</span>
+          </a>
+          <a href="#" class="app-item" data-app="youtube" title="YouTube">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2c-.3-1.3-1.3-2.3-2.5-2.5C19.1 3 12 3 12 3s-7.1 0-9 .7c-1.3.2-2.3 1.2-2.5 2.5C0 8.1 0 12 0 12s0 3.9.5 5.8c.3 1.3 1.3 2.3 2.5 2.5 1.9.7 9 .7 9 .7s7.1 0 9-.7c1.3-.2 2.3-1.2 2.5-2.5.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.5v-7l6 3.5-6 3.5z"/></svg>
+            <span>YouTube</span>
+          </a>
+          <a href="#" class="app-item" data-app="calendar" title="Google Calendar">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+            <span>Calendar</span>
+          </a>
+          <a href="#" class="app-item" data-app="meet" title="Google Meet">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4 6h-2v2h-2V9H9V7h2V5h2v2h2v2zm4 6h-8v-2h8v2z"/></svg>
+            <span>Meet</span>
+          </a>
+          <a href="#" class="app-item" data-app="docs" title="Google Docs">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM9 17H8v-2h1v2zm0-4H8v-2h1v2zm0-4H8V7h1v2zm4 8h-1v-2h1v2zm0-4h-1v-2h1v2zm0-4h-1V7h1v2zm4 8h-1v-2h1v2zm0-4h-1v-2h1v2zm0-4h-1V7h1v2z"/></svg>
+            <span>Docs</span>
+          </a>
+          <a href="#" class="app-item" data-app="sheets" title="Google Sheets">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H8v-2h1v2zm0-4H8v-2h1v2zm0-4H8V7h1v2zm4 8h-1v-2h1v2zm0-4h-1v-2h1v2zm0-4h-1V7h1v2zm4 8h-1v-2h1v2zm0-4h-1v-2h1v2zm0-4h-1V7h1v2z"/></svg>
+            <span>Sheets</span>
+          </a>
+          <a href="#" class="app-item" data-app="slides" title="Google Slides">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/></svg>
+            <span>Slides</span>
+          </a>
+          <a href="#" class="app-item" data-app="photos" title="Google Photos">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+            <span>Photos</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- User Avatar -->
+      <button class="avatar-btn" id="avatarBtn" title="Google Account">
+        <div class="avatar" id="avatar"></div>
+      </button>
+
+      <!-- Avatar Dropdown -->
+      <div class="dropdown" id="avatarDropdown">
+        <div class="dropdown-header">
+          <div class="user-email" id="userEmail">Loading...</div>
+        </div>
+        <a href="#" class="dropdown-item" id="googleAccountLink">
+          <span>Google Account</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blurred background -->
+  <div class="bg" id="bg"></div>
+  <div class="bg-overlay"></div>
+  <div id="weather-fx"></div>
+
+  <!-- Center content -->
+  <main class="center">
+    <time class="clock" id="clock">9:41</time>
+    <p class="date" id="date">Sábado, 12 de Abril</p>
+
+    <div class="divider"></div>
+
+    <p class="greeting" id="greeting">Buenas noches</p>
+
+    <div class="weather" id="weather">
+      <span class="weather-icon" id="weatherIcon">☁️</span>
+      <span class="weather-temp" id="weatherTemp">--°</span>
+    </div>
+  </main>
+
+  <!-- Search (appears on click/shortcut) -->
+  <div class="search-wrapper" id="searchWrapper">
+    <div class="search-box" id="searchBox">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+      </svg>
+      <input type="text" id="searchInput" placeholder="Buscar" autocomplete="off" spellcheck="false">
+    </div>
+    <div id="searchResult" class="search-result hidden"></div>
+  </div>
+
+  <!-- Bottom dock -->
+  <nav class="dock" id="dock">
+    <!-- Dock items injected by JS -->
+  </nav>
+
+  <!-- Tiny gear -->
+  <button class="gear" id="gear" title="Ajustes">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="3"></circle>
+      <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06A1.65 1.65 0 0019.32 9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"></path>
+    </svg>
+  </button>
+
+  <!-- Settings Modal (Hidden) -->
+  <div class="modal-wrapper" id="settingsWrapper">
+    <div class="modal">
+      <h2>Ajustes</h2>
+      <div class="input-group">
+        <label>Tu nombre</label>
+        <input type="text" id="settingsName" placeholder="Matías">
+      </div>
+      <div class="input-group">
+        <label>Reloj 24 Horas</label>
+        <label class="switch">
+          <input type="checkbox" id="settings24h">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="input-group">
+        <label>Nivel de Desenfoque</label>
+        <input type="range" id="settingsBlur" min="0" max="60" value="10" class="range-slider">
+      </div>
+      <div class="input-group">
+        <label>Fondo de pantalla</label>
+        <input type="file" id="settingsBg" accept="image/*" class="file-input">
+        <button id="resetBgBtn" class="btn secondary">Restaurar Original</button>
+      </div>
+      <button class="btn secondary" id="openFontPicker">Personalizar Fuentes</button>
+      <button class="btn" id="closeSettings">Guardar</button>
+    </div>
+  </div>
+
+  <!-- Dock Edit Context Menu (Hidden) -->
+  <div class="context-menu" id="dockContext">
+    <div class="input-group">
+      <label>URL</label>
+      <input type="text" id="dockEditUrl">
+    </div>
+    <div class="input-group">
+      <label>Nombre</label>
+      <input type="text" id="dockEditName">
+    </div>
+    <div class="context-actions">
+      <button class="btn" id="dockSaveBtn">Guardar</button>
+      <button class="btn danger" id="dockRemoveBtn">Eliminar</button>
+    </div>
+  </div>
+
+  <!-- Font Picker Modal (Hidden) -->
+  <div class="modal-wrapper" id="fontPickerWrapper">
+    <div class="modal font-picker-modal">
+      <div class="font-picker-header">
+        <h2>Personalizar Fuentes</h2>
+        <button class="close-btn" id="closeFontPicker">✕</button>
+      </div>
+
+      <div class="font-picker-tabs">
+        <button class="tab-btn active" data-tab="clock">Reloj</button>
+        <button class="tab-btn" data-tab="greeting">Saludo y Fecha</button>
+      </div>
+
+      <div class="font-picker-content">
+        <!-- Clock Fonts Tab -->
+        <div class="tab-content active" id="clockTab">
+          <div class="font-preview-section">
+            <label>Vista Previa</label>
+            <div class="font-preview large" id="clockPreview">13:59</div>
+          </div>
+          <div class="fonts-grid" id="clockFontsGrid">
+            <!-- Fonts injected by JS -->
+          </div>
+        </div>
+
+        <!-- Greeting/Date Fonts Tab -->
+        <div class="tab-content" id="greetingTab">
+          <div class="font-preview-section">
+            <label>Vista Previa</label>
+            <div class="font-preview" id="greetingPreview">Buenas tardes</div>
+          </div>
+          <div class="fonts-grid" id="greetingFontsGrid">
+            <!-- Fonts injected by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="font-loader.js"></script>
+  <script src="newtab.js"></script>
+</body>
+</html>
