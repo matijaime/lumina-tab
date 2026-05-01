@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Lumina Tab",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A beautiful, macOS-inspired new tab experience for Chrome.",
   "chrome_url_overrides": {
     "newtab": "newtab.html"
@@ -19,5 +19,8 @@
     "16": "logo.png",
     "48": "logo.png",
     "128": "logo.png"
+  },
+  "action": {
+    "default_title": "Lumina Tab Settings"
   }
 }
